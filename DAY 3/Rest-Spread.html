@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+
+ <script>
+
+  // rest
+  // function myFun(...abc) //... rest
+  // {
+  //  console.log(abc)
+  // }
+  // myFun(1, 2, 3, 4, 5)
+
+  //spread
+  function myFun2() {
+   const arr = [1, 2, 3, 4]
+   const [a, b, c] = arr
+   console.log(a, b, c)
+   console.log(...arr)
+  }
+  myFun2()
+
+
+  // Define a destructuring array with two regular variables
+  // and one rest variable:
+  const [firstName, lastName, ...otherInfo] = [
+   "Naruto", "Sasuke", "Goku", "Ichigo", "Kirito"
+  ];
+
+  // Invoke the otherInfo variable:
+  console.log(otherInfo);
+
+  // The invocation above will return:
+  ["Goku", "Ichigo", "Kirito"]
+
+
+
+  //Spread: extract all the values 
+  // The spread syntax works within array literals, function calls, and initialized property objects to spread the values of iterable objects into separate items.
+
+  let arr = [3, 5, 1];
+  alert(...arr);
+
+
+
+  // Rest parameters are used to create functions that accept any number of arguments.
+  // The spread syntax is used to pass an array to functions that normally require a list of many arguments.
+ </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
